@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title> Pregunta seria </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>Mi estimado</h1>
+        <p>Favor de ver el siguiente video y responder la pregunta con toda seriedad</p>
+        <video width="640" height="360" controls>
+            <source src="C:\Users\Usuario\Desktop\Apache24\htdocs\media\me-amas.mp4" type="video/mp4">
+          
+        </video>
+
+
+        </video>
+
+        <section>
+            <h2>Respuesta a la pregunta</h2>
+            <input type="text" id="miInput"> si o no
+            <button onclick="guardarRespuesta()">Enviar</button>
+            <script>
+            function guardarRespuesta (){
+                var inputElement = document.getElementById("miInput");
+                var Respuesta = inputElement.value;
+                if(Respuesta.trim()== "Si") {
+                    alert("Te amooo ");
+                }else {
+                alert("No me amas :c");  }}
+            
+            </script>
+        </section>
+    </body>
+</html>
